@@ -1,0 +1,19 @@
+Black Box Testing
+In black box testing, the box is opaque. The tester cannot see inside the box. The tester cannot access and doesn't know about the implementation of the code base to write tests. Instead, the tester is forced to use the application as an end user would by interacting with the application and waiting for its response, verifying the results.
+
+There are at least two ways to execute this type of testing.
+
+A tester who repeatedly and manually performs a number of predefined steps and visually verifies the results.
+Use specialized tools to test the application with APIs that behave similar to how a human interacts.
+In iOS application development, Apple provides a tool called UI Automation to perform black box testing.
+
+2. What is UI Automation? 
+
+UI Automation is a tool that Apple provides and maintains for higher level, automated, testing of iOS applications. Tests are written in JavaScript, adhering to an API defined by Apple.
+
+TEST::Writing tests can be made easier by relying on accessibility labels for user interface elements in your application. Don’t worry though, if you don’t have these defined, there are alternatives available.
+
+The UI TEST:Automation API lacks the typical xUnit based format for writing tests. One difference with unit testing is that the tester needs to manually log success and failures. UI TEST:::Automation tests are run from the Automation instrument within the Instruments tool that comes with Apple's developer tools. The tests can be run in the iOS Simulator or on a physical device.
+
+Thanks
+Avinash Basavaraj
